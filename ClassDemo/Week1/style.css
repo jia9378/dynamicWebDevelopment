@@ -1,0 +1,6 @@
+body {
+    background-color: #add8e6;
+    border-top-color: red; /* set only the top border red */
+    border-bottom-width: thin; /* set only the bottom border thin */
+    border-left-style: dotted; /* set only the left border to a dotted line */
+}
