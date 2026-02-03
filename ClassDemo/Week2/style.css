@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(182, 117, 95);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.blue-text {
+    font-size: 240px;
+    color: navy;
+}
+
+#howdy{
+    border: black 10px dashed;
+    padding: 20px;
+    background-color:rgb(250, 157, 42);
+}
+
+.lay {
+    display: inline;
+    padding: 100px
+}
+
+.parent{
+    height: 400px;
+    background-color: bisque;
+    display:flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+}

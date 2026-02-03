@@ -1,0 +1,30 @@
+body {
+    /* background-color: #FAF3E1; */
+    /* font-family: "Cormorant", serif; */
+    margin: 50px;
+}
+
+canvas {
+  display: block;
+}
+
+
+.header {
+  font-family: "DM Serif Text", serif;
+  letter-spacing: 5px;
+  text-shadow: 0.5px 0.5px 0 rgba(0,0,0,0.15);
+  max-width: 900px;
+  margin: 10px auto 10px auto;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 80;
+}
+
+#noise-layer{
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  mix-blend-mode: soft-light;
+  opacity: 0.35;
+}
