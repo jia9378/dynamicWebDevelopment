@@ -1,8 +1,8 @@
 body {
     /* background-color: #FAF3E1; */
     /* font-family: "Cormorant", serif; */
-    margin-left: 320px;
-    margin-right: 320px;
+    margin-left: 300px;
+    margin-right: 300px;
     margin-top: 60px;
 }
 
@@ -10,29 +10,55 @@ canvas {
   display: block;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 #noise-layer{
   position: fixed;
   inset: 0;
   pointer-events: none;
   mix-blend-mode: hard-light;
-  opacity: 0.35;
+  opacity: 0.4;
+}
+
+#stamp{
+    position: static;
+    inset: 0;
+    pointer-events: none;
+    mix-blend-mode: hard-light;
+    opacity: 0.4;
 }
 
 .header {
   font-family: "DM Serif Text", serif;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
   text-shadow: 2px 1.5px 0 rgba(0,0,0,0.25);
   max-width: 900px;
   margin: 10px auto 10px auto;
+  /* margin-left: -100px;
+  margin-right: -100px; */
   text-align: center;
-  font-size: 64px;
+  font-size: 68px;
   font-weight: 80;
+}
+
+.advertisement {
+  font-family: "DIN Condensed", sans-serif;
+  font-weight: 100;
+  font-size: 32px;
+  font-weight: 100;
+  max-width: 900px;
+  margin: 10px auto -60px auto;
+  text-align: center;
 }
 
 hr{
   border: none;
   border-top: 1.5px solid rgba(0,0,0,0.5);
   margin: 12px;
+  max-width: 1200px;
 }
 
 .pointing{
@@ -45,8 +71,8 @@ hr{
 .grid1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 40px;
-    max-width: 950px;
+    gap: 50px;
+    max-width: 920px;
     margin: 10px auto;
     margin-bottom: 0px ;
     text-align: justify;
@@ -62,7 +88,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 50px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 20px auto;
     text-align: justify;
     text-align-last: left;
@@ -79,7 +105,19 @@ hr{
     line-height: 20px;
     object-fit: contain;
     text-shadow: none;
-    margin-top: 30px;
+    margin-top: 10px;
+}
+
+#tile-border{
+    font-family: "DIN Condensed", sans-serif;
+    font-weight: 100;
+    font-size: 32px;
+    max-width: 900px;
+    text-align: center;
+    border: 1.5px solid black;
+    padding: 5%;
+    padding-top: 15px;
+    padding-bottom: -10px;
 }
 
 .tile2-text{
@@ -91,7 +129,7 @@ hr{
     line-height: 24px;
     object-fit: contain;
     text-shadow: none;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .tile2 img{
@@ -105,12 +143,13 @@ hr{
 }
 
 .tile-bold-text{
-    margin-top: 30px;
+    margin-top: 40px;
     font-weight: bold;
     font-family: "DIN Condensed", sans-serif;
     font-size: 90px;
     text-shadow: 1px 1.5px 0 rgba(0,0,0,0.25);
-    text-align: justify;
+    /* text-align: justify; */
+    text-align: left;
 }
 
 #bold-text-extra {
@@ -128,9 +167,27 @@ hr{
     text-align: justify;
 }
 
-#mouse-trace{
+#bar-page{
     position: fixed;
     top: 0;
     left: 0;
     pointer-events: none;
+    mix-blend-mode: hard-light;
+    opacity: 0.4;
+}
+
+.footer{
+  text-align: center;
+  font-family: "DIN Condensed", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.4px;
+  opacity: 0.7;
+  padding: 20px
+}
+
+.footer-small{
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
