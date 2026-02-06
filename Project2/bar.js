@@ -3,7 +3,6 @@ let mouse
 let stamps = [];
 let angle = 0
 //set variable n=9 to the 9 duplicaiton of the models
-let n = 9
 let radius
 let c = 0
 let cup
@@ -17,7 +16,7 @@ function setup(){
   c.parent("bar-page");
   pixelDensity(0.75);
   frameRate(10);
-//   noStroke()
+  noStroke()
 
   g = createGraphics(width, height);
   g.loadPixels();
@@ -28,7 +27,7 @@ function draw(){
   //adjust the cemera, set the perspective from font top
 //   camera(radius*0.5, -radius*2, radius*4)
   background("#EDD68C");
-  pointLight(100, 100, 100, 30, -40, 30);
+  pointLight(80, 80, 250, 30, -40, 30);
   for(let i = 0; i < g.pixels.length; i += 4){
     let n = random(0, 100);
     g.pixels[i]   = n+50;
@@ -61,15 +60,14 @@ function draw(){
   image(mouse, windowWidth/-2+mouseX - w/2, windowHeight/-2+mouseY - h/2, w, h);
 //   c = abs(sin(frameCount*0.9)-0.1*i)*255
     push()
-    translate(0,-windowHeight/2*0.4,0)
+    translate(-windowHeight/2*0.75,-windowHeight/2*0.36,0)
     //spin each cup arounf their Y axis
     rotateY(frameCount * 0.1)
     //overlay 2 materials to a better effect
-    specularMaterial(0,0,0);
-    emissiveMaterial(0,0,255)
+    specularMaterial(0,0,255);
     // box(radius*0.25)
     rotateX(90)
-    scale(0.8)
+    scale(0.9)
     model(cup)
     pop()
   
