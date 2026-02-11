@@ -1,0 +1,21 @@
+#important {
+    font-family: "DIN Condensed", sans-serif;
+    font-weight: 100;
+    font-size: 32px;
+    max-width: 900px;
+    text-align: center;
+    color: blue;
+    background-color: wheat;
+    border: 1.5px solid black;
+    padding: 5%;
+    padding-top: 15px;
+    padding-bottom: -10px;
+}
+
+.show{
+    display:block;
+}
+
+.hide{
+    display:none;
+}

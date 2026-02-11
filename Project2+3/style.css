@@ -31,6 +31,14 @@ a{
     opacity: 0.4;
 }
 
+#weather{
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: hard-light;
+  opacity: 0.4;
+}
+
 .header {
   font-family: "DM Serif Text", serif;
   letter-spacing: 8px;
@@ -143,13 +151,14 @@ hr{
 }
 
 .tile-bold-text{
+  
     margin-top: 40px;
     font-weight: bold;
     font-family: "DIN Condensed", sans-serif;
     font-size: 90px;
     text-shadow: 1px 1.5px 0 rgba(0,0,0,0.25);
-    /* text-align: justify; */
     text-align: left;
+    text-transform: uppercase;
 }
 
 #bold-text-extra {
@@ -159,12 +168,28 @@ hr{
 }
 
 .grid3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px;
-    max-width: 950px;
-    margin: 20px auto;
-    text-align: justify;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 950px;
+  margin: 20px auto;
+  justify-items: center;   /* horizontal center */
+  align-items: center;     /* vertical alignment inside row */
+  text-align: center;
+  
+    margin-top: 40px;
+    font-weight: bold;
+    font-family: "DIN Condensed", sans-serif;
+    font-size: 90px;
+    text-shadow: 1px 1.5px 0 rgba(0,0,0,0.25);
+    text-transform: uppercase;
+}
+.weatherGif{
+    width: 120%;
+    height: auto;
+    object-fit: contain;
+    align-items: center;
+    aspect-ratio: 1 / 1;
 }
 
 #bar-page{
