@@ -177,19 +177,34 @@ hr{
   align-items: center;     /* vertical alignment inside row */
   text-align: center;
   
-    margin-top: 40px;
+    margin-top: 20px;
     font-weight: bold;
     font-family: "DIN Condensed", sans-serif;
     font-size: 90px;
     text-shadow: 1px 1.5px 0 rgba(0,0,0,0.25);
     text-transform: uppercase;
 }
+.gif-wrapper {
+  width: 500px;          /* fixed width */
+  aspect-ratio: 1 / 1;   /* makes it square */
+  margin: 0 auto;        /* center horizontally */
+  overflow: hidden;
+  margin-bottom: 100px;
+  margin-top: -10px;
+}
+
 .weatherGif{
-    width: 120%;
-    height: auto;
-    object-fit: contain;
-    align-items: center;
-    aspect-ratio: 1 / 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#time{
+  text-align: left;
+  font-size: 36px;
+  font-weight: 100;
+  margin-top: 10px;
 }
 
 #bar-page{
@@ -199,6 +214,24 @@ hr{
     pointer-events: none;
     mix-blend-mode: hard-light;
     opacity: 0.4;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 20px auto;
+  justify-items: center;   /* horizontal center */
+  align-items: center;     /* vertical alignment inside row */
+  text-align: center;
+  
+    margin-bottom: 0px;
+    font-weight: regular;
+    font-family: "DIN Condensed", sans-serif;
+    font-size: 32px;
+    text-shadow: 1px 1.5px 0 rgba(0,0,0,0.25);
+    text-transform: uppercase;
 }
 
 .footer{
