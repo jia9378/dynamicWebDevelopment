@@ -14,7 +14,7 @@ window.onload = async() => {
         access_key: "27ba89c507dbd6175ccec136f6761fb4",
         query: "London",
     });
-    let url = "http://api.weatherstack.com/current?" + params.toString();
+    let url = "https://api.weatherstack.com/current?" + params.toString();
     console.log(url);
     let response = await fetch(url);
     console.log(response);
@@ -26,7 +26,7 @@ window.onload = async() => {
     let temperature = current.temperature;
     let weather_descriptions = current.weather_descriptions[0].toLowerCase();
     // weather_descriptions = "drizzle"
-    weather_descriptions = "sunny"
+    // weather_descriptions = "sunny"
     // weather_descriptions = "snowy"
     document.getElementById("time").innerHTML = time;
     document.getElementById("today").innerHTML = "\r\n" + temperature + "°C, " + weather_descriptions;
