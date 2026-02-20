@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Guestbook</title>
+        <link href="./style.css" rel="stylesheet" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <form method="POST" action = "/sign">
+            <p>Name:</p><input type="text" name="guestName" >
+            <p>Message:</p><input type="text" name="guestMessage">
+            <input type="submit" value="Sign Guestbook">
+        </form>
+        previous messages:
+        <div id="messages"></div>
+     
+    </body>
+</html>
